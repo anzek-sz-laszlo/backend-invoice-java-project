@@ -1,0 +1,13 @@
+D:\java_meghajto\ProgramozasTanitasa\java_backend_tanfolyam\anzek\pallas70projects\InvoiceSystem\src\main\java\hu\anzek\backend\invoicesystem\InvoiceSystem.java
+D:\java_meghajto\ProgramozasTanitasa\java_backend_tanfolyam\anzek\pallas70projects\InvoiceSystem\src\main\java\hu\anzek\backend\invoicesystem\model\Vevo.java
+D:\java_meghajto\ProgramozasTanitasa\java_backend_tanfolyam\anzek\pallas70projects\InvoiceSystem\src\main\java\hu\anzek\backend\invoicesystem\service\Invoicing.java
+D:\java_meghajto\ProgramozasTanitasa\java_backend_tanfolyam\anzek\pallas70projects\InvoiceSystem\src\main\java\hu\anzek\backend\invoicesystem\configuration\InvoceConfigOsztaly.java
+D:\java_meghajto\ProgramozasTanitasa\java_backend_tanfolyam\anzek\pallas70projects\InvoiceSystem\src\main\java\hu\anzek\backend\invoicesystem\repository\SzallitoBekerese.java
+D:\java_meghajto\ProgramozasTanitasa\java_backend_tanfolyam\anzek\pallas70projects\InvoiceSystem\src\main\java\hu\anzek\backend\invoicesystem\repository\VevoCikkRepo.java
+D:\java_meghajto\ProgramozasTanitasa\java_backend_tanfolyam\anzek\pallas70projects\InvoiceSystem\src\main\java\hu\anzek\backend\invoicesystem\repository\CikkBeolvas.java
+D:\java_meghajto\ProgramozasTanitasa\java_backend_tanfolyam\anzek\pallas70projects\InvoiceSystem\src\main\java\hu\anzek\backend\invoicesystem\configuration\DatabaseConfig.java
+D:\java_meghajto\ProgramozasTanitasa\java_backend_tanfolyam\anzek\pallas70projects\InvoiceSystem\src\main\java\hu\anzek\backend\invoicesystem\repository\VevoBekerese.java
+D:\java_meghajto\ProgramozasTanitasa\java_backend_tanfolyam\anzek\pallas70projects\InvoiceSystem\src\main\java\hu\anzek\backend\invoicesystem\model\Szallito.java
+D:\java_meghajto\ProgramozasTanitasa\java_backend_tanfolyam\anzek\pallas70projects\InvoiceSystem\src\main\java\hu\anzek\backend\invoicesystem\service\DiscountedValue.java
+D:\java_meghajto\ProgramozasTanitasa\java_backend_tanfolyam\anzek\pallas70projects\InvoiceSystem\src\main\java\hu\anzek\backend\invoicesystem\model\Cikk.java
+D:\java_meghajto\ProgramozasTanitasa\java_backend_tanfolyam\anzek\pallas70projects\InvoiceSystem\src\main\java\hu\anzek\backend\invoicesystem\repository\SzallitoRepo.java

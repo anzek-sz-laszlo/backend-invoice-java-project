@@ -1,0 +1,4 @@
+adoszam:12345678-1-01
+megnevezes:BackendJava Kft
+cim:1020304 Honijavacity Backend utca 123.
+deviza:HUF

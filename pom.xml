@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!--    A  csomagnév a Maven által követett konvenciók egyike. 
+        Ezen konvenciók értelmében a Maven a projekt nevéből (ArtifactId), 
+        az esetleges domain nevéből 
+        és az egyes csomagnevek által elkészített egyedi csomagnevet alkot. 
+        A konvenció alapján az egyes szintek az ArtifactId szétválasztásával jönnek létre.
+        A szokványos Maven konvenciók alapján:
+        Az ArtifactId (a pom.xml fájlban) az anzek-invoicesystem lenne.
+        A cég domain nevének első három karaktere szokás a groupId eleme lenni. Ebben az esetben az "anz.anzek.backend" lenne.
+        De inkább szokás azország előteg alkalmazása-->
+    <groupId>hu.anzek.backend</groupId>
+    <artifactId>InvoiceSystem</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>20</maven.compiler.source>
+        <maven.compiler.target>20</maven.compiler.target>
+        <exec.mainClass>hu.anzek.backend.invoicesystem.InvoiceSystem</exec.mainClass>
+    </properties>
+    
+    <dependencies>
+        <!-- JUnit 5 -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.10.0-RC1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.10.0-RC1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest</artifactId>
+            <version>2.2-rc1</version>
+            <scope>test</scope>
+        </dependency>
+        <!--Jackson YAML feldolgozó-->
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-yaml</artifactId>
+            <version>2.16.0</version> 
+        </dependency>        
+        <!--mysql kapcsolatok és adatkezlés-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.33</version>        
+        </dependency>      
+    </dependencies>    
+    <build>
+        <outputDirectory>target/classes</outputDirectory>
+         <directory>keszTermek</directory>
+        <!-- további beállítások -->
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>hu.anzek.backend.invoicesystem.InvoiceSystem</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>        
+    </build>    
+</project>

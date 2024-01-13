@@ -1,0 +1,5 @@
+hu\anzek\backend\invoicesystem\repository\CikkBeolvasTest.class
+hu\anzek\backend\invoicesystem\repository\VevoBekereseTest.class
+hu\anzek\backend\invoicesystem\service\InvoicingTest.class
+hu\anzek\backend\invoicesystem\service\DiscountedValueTest.class
+hu\anzek\backend\invoicesystem\repository\SzallitoBekereseTest.class

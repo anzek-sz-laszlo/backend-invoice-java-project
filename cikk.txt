@@ -1,0 +1,24 @@
+kod : 1
+megnevezes : Egyes termek
+mennyisegi_egyseg : raklap
+egyseg_ar : 152400.5
+
+kod : 3
+megnevezes : Harmas termek     
+mennyisegi_egyseg : db
+egyseg_ar : 2850.1
+
+kod : 2
+megnevezes : Ketszer-Kettes termek
+mennyisegi_egyseg : kg
+egyseg_ar : 403.2
+
+kod : 5
+megnevezes : Otos termek
+mennyisegi_egyseg : liter
+egyseg_ar : 758.6
+
+kod : 4
+megnevezes : Negyes termek
+mennyisegi_egyseg : csomag
+egyseg_ar : 61500.78

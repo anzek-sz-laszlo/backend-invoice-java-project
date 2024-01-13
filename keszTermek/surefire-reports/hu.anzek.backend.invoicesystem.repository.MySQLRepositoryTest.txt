@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: hu.anzek.backend.invoicesystem.repository.MySQLRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.823 s <<< FAILURE! -- in hu.anzek.backend.invoicesystem.repository.MySQLRepositoryTest
+hu.anzek.backend.invoicesystem.repository.MySQLRepositoryTest.cikkek_Sql_save_Test -- Time elapsed: 1.554 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Nincs talalat, ures eredmenyt kaptunk!
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:134)
+	at hu.anzek.backend.invoicesystem.repository.MySQLRepositoryTest.cikkek_Sql_save_Test(MySQLRepositoryTest.java:106)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

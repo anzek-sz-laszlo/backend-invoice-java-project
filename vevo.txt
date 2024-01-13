@@ -1,0 +1,35 @@
+kod:1
+adoszam:23456789-1-02
+megnevezes:Szamla Vevo-1
+cim:52459 Borcsiura Kockakocsi ut 5
+fizmod:1
+fizhatido:0
+engedmeny:0
+deviza:HUF
+
+kod:2
+adoszam:34567890-1-03
+megnevezes:Szamla Vevo-2
+cim:10592 Kiskutylakhaza Vakondturas ter 1234
+fizmod:2
+fizhatido:7
+engedmeny:20
+deviza:EUR
+
+kod:3
+adoszam:45678901-1-04
+megnevezes:Szamla Vevo-3
+cim: 60235 Hatvankert Hetvenhatodik utca 145
+fizmod:2
+fizhatido:10
+engedmeny:3
+deviza:HUF
+
+kod:4
+adoszam:56789012-1-05
+megnevezes:Szamla Vevo-4
+cim:35089 Albetetes Golyoscsap ut 70/A 4.em 5.ajto
+fizmod:1
+fizhatido:0
+engedmeny:5
+deviza:HUF

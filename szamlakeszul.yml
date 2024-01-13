@@ -1,0 +1,47 @@
+# az árfolyamok
+arfolyam:
+  values:
+      HUF: 0.0026
+      EUR: 377.39
+    
+# a számlák:
+invoices:
+  # invoice (1)  
+  - main:
+      sorszam: man001/23
+      kod: 2
+      keszult: 2023-12-2
+    items:
+      # item (1)    
+      - kod: 1
+        mennyiseg: 12
+      # item (2)    
+      - kod: 3
+        mennyiseg: 3
+      # item (3)    
+      - kod: 4
+        mennyiseg: 2
+  # invoice (2)        
+  - main:
+      sorszam: man002/23
+      kod: 1
+      keszult: 2023-12-2
+    items:
+      # item (1)  
+      - kod: 3
+        mennyiseg: 4
+      # item (2)    
+      - kod: 2
+        mennyiseg: 1
+  # invoice (3)          
+  - main:
+      sorszam: man003/23
+      kod: 4
+      keszult: 2023-12-2
+    items:
+      # item (1)    
+      - kod: 2
+        mennyiseg: 2
+      # item (2)    
+      - kod: 1
+        mennyiseg: 2
