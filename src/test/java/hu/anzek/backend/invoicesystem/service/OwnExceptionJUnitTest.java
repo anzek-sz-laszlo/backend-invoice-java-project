@@ -10,7 +10,6 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
 
 
 /**
@@ -40,17 +39,23 @@ public class OwnExceptionJUnitTest {
     }
 
     /**
+     * Hiba dobása az OwnConnectionExeption segítségével<br>
      * Léterhozunk egy "sajét" kivételt<br>
      * @throws OwnConnectionExeption saját kivétel kezelő<br>
      */
     void throwException() throws OwnConnectionExeption {
-        // Példa: Hiba dobása az OwnConnectionExeption segítségével
-        OwnExceptionClass innerException = new OwnExceptionClass("Atdobva a 'OwnExceptionClass' osztalynak, ezzel letrehozva a Kulso kivetelt!");
-        throw new OwnConnectionExeption("Belso kivetel letrehozasa", innerException);
+    
+        OwnExceptionClass innerException = new OwnExceptionClass("A kivetel atdobva a kulso, 'OwnExceptionClass' osztalynak,\n    ezzel letrehozva a Kulso kivetelt!");
+        // Hibagenerálás,
+        // egy kivételt lehet dobni az alábbi módon:
+        throw new OwnConnectionExeption("A kivetel, ami 'nem allitja majd le a futast', letrehozasa!", innerException);
     }
 
     @Test
     public void ownExceptionTest(){
+        // Kivétel elkapása:
+        // A kivétel elkapására a try-catch blokkot használjuk. 
+        // A "try-blokk"-ban lévő kód dobhat kivételt, és a megfelelő catch blokk próbálja majd elkapni és kezelni azt!
         try {
             
             // Példa egy kivétel (hiba) létrehozására és tovább dobására:
@@ -58,7 +63,7 @@ public class OwnExceptionJUnitTest {
         } catch (OwnConnectionExeption e) {
             
             // A saját kivétel elkapása és feldolgozása:
-            System.out.println("Elkapott(caught) 'OwnConnectionExeption' osztaly hibauzenete: " + e.getMessage());
+            System.out.println("A Catch agon elkaptuk (caught)\n    az 'OwnConnectionExeption' osztaly altal dobott hibauzenetet: \"" + e.getMessage() +"\"");
 
             // Az "OwnExceptionClass" példány elérése, amelyet a saját kivétel tartalmaz:
             OwnExceptionClass innerException = e.getConnectionException();
@@ -68,8 +73,13 @@ public class OwnExceptionJUnitTest {
             }
         
         } catch (Exception e) {
-            // Egyéb kivételek elkapása
-            System.out.println("Elkapott altalanos kivetel: " + e.getMessage());
+            
+            // Egyéb kivételek elkapása            
+            System.out.println("Elkapott barmely mas, de altalanos kivetel: " + e.getMessage());
+        } finally {
+            
+            // A finally blokk mindig lefut, függetlenül attól, hogy keletkezett-e kivétel vagy sem...
+            System.out.println("Finally blokk is lefutott.");
         }
     }
 }

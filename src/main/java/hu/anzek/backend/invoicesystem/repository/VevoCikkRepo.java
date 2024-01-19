@@ -106,6 +106,15 @@ public interface VevoCikkRepo <T>{
     default Optional<T> findByKod(Long kod){
         // üres bodyval
         // vagyis ez a metódus csak implementálva lesz használható       
-        return  Optional.empty();    
+        return Optional.empty();    
+    }
+    
+    /**
+     * Ez visszaad egy opcionális listát<br>
+     * @return opcionális lista<br>
+     */
+    default Optional<List<T>> findAll(){
+        
+        return Optional.empty();  
     }
 }

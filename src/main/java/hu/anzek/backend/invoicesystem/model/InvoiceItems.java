@@ -11,9 +11,9 @@ package hu.anzek.backend.invoicesystem.model;
  */
 public record InvoiceItems(Long id, 
                            String sorszam, 
-                           Long cikkKod,
+                           Long cikk_kod,
                            Integer mennyiseg, 
-                           double egysegAr, 
-                           double afaKulcs
+                           double egyseg_ar, 
+                           double afa_kulcs
         ){
 }

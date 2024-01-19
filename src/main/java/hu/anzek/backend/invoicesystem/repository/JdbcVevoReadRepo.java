@@ -5,8 +5,8 @@
 package hu.anzek.backend.invoicesystem.repository;
 
 
+import hu.anzek.backend.invoicesystem.model.Vevo;
 import hu.anzek.backend.invoicesystem.service.MySQLConnectionService;
-import hu.anzek.backend.invoicesystem.model.Cikk;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -17,11 +17,10 @@ import java.util.Optional;
 
 
 /**
- * 
+ *
  * @author User
  */
-public class JdbcCikkReadRepo implements VevoCikkRepo {
-
+public class JdbcVevoReadRepo implements VevoCikkRepo {
     // tagváltozó
     MySQLConnectionService msqlr;
     
@@ -36,7 +35,7 @@ public class JdbcCikkReadRepo implements VevoCikkRepo {
      * Egy Cikk-elemet beolvasó osztály, amely a VevoCikkRepo interfész implementációja<br>
      * Azonban nekünk itt csakis egye konkrét típus kell a két lehetségesből, a "Cikk"<br>  
      */
-    public JdbcCikkReadRepo() {
+    public JdbcVevoReadRepo() {
     }
 
     /**
@@ -48,21 +47,25 @@ public class JdbcCikkReadRepo implements VevoCikkRepo {
      * @return visszaad opcionálisan vagy egy cikk egyedet, vagy semmit<br>
      */
     @Override
-    public Optional<Cikk> findByKod(Long kod) {
+    public Optional<Vevo> findByKod(Long kod) {
         
         if(kod != null){
-            String sql = "SELECT DISTINCT * FROM cikk WHERE kod = ?";
+            String sql = "SELECT DISTINCT * FROM vevo WHERE kod = ?";
             try (Connection connection = msqlr.getConnection();
                 PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
                 preparedStatement.setLong(1, kod);
                 try (ResultSet resultSet = preparedStatement.executeQuery()) {
                     if (resultSet.next()) {
-                        return Optional.of(new Cikk(resultSet.getLong("kod"),
+                        return Optional.of(new Vevo(resultSet.getLong("kod"),
+                                                    resultSet.getString("adoszam"),
                                                     resultSet.getString("megnevezes"),
-                                                    resultSet.getString("mennyisegi_egyseg"),
-                                                    resultSet.getDouble("egyseg_ar") 
-                                                    )
-                                          );
+                                                    resultSet.getString("cim"),
+                                                    resultSet.getInt("fizmod"),
+                                                    resultSet.getInt("fizhatido"),
+                                                    resultSet.getInt("engedmeny"),
+                                                    resultSet.getString("deviza")
+                                                    ) 
+                                           );
                     }
                 }
             } catch (SQLException e) {
@@ -80,26 +83,30 @@ public class JdbcCikkReadRepo implements VevoCikkRepo {
      * @return visszaad opcionálisan Cikk-listát vagy semmit<br>
      */
     @Override
-    public Optional<List<Cikk>> findAll() {
+    public Optional<List<Vevo>> findAll() {
        
-        String sql = "SELECT DISTINCT * FROM cikk";
+        String sql = "SELECT DISTINCT * FROM vevo";
         try (Connection connection = msqlr.getConnection();
             PreparedStatement preparedStatement = connection.prepareStatement(sql)) {     
-            List<Cikk> cikkek = new ArrayList<>();
+            List<Vevo> vevok = new ArrayList<>();
             
             try (ResultSet resultSet = preparedStatement.executeQuery()) {
                 while (resultSet.next()) {
-                    Cikk cikk = new Cikk(resultSet.getLong("kod"),
+                    Vevo vevo = new Vevo(resultSet.getLong("kod"),
+                                         resultSet.getString("adoszam"),
                                          resultSet.getString("megnevezes"),
-                                         resultSet.getString("mennyisegi_egyseg"),
-                                         resultSet.getDouble("egyseg_ar") 
+                                         resultSet.getString("cim"),
+                                         resultSet.getInt("fizmod"),
+                                         resultSet.getInt("fizhatido"),
+                                         resultSet.getInt("engedmeny"),
+                                         resultSet.getString("deviza")
                                         );
-                    cikkek.add(cikk);
+                    vevok.add(vevo);
                 }
             }
             
-            if ( ! cikkek.isEmpty()) {
-                return Optional.of(cikkek);
+            if ( ! vevok.isEmpty()) {
+                return Optional.of(vevok);
             }            
         } catch (SQLException e) {
             e.printStackTrace();
@@ -115,7 +122,8 @@ public class JdbcCikkReadRepo implements VevoCikkRepo {
      * @return 
      */
     @Override
-    public List<Cikk> beolvasTxtAdattarbol(String fajlEleres) {
+    public List<Vevo> beolvasTxtAdattarbol(String fajlEleres) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
+    
 }

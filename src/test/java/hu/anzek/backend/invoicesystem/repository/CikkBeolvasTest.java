@@ -61,8 +61,9 @@ public class CikkBeolvasTest {
     
     /**
      * cikkRepo_ShouldNotBeNull Junit 5 Test: <br>
-     * Fontos: hogy bár az előkészítő metódusok igen, a @Test annotációval ellátott metódusoknak nem lehetnek static-ok<br>
-     * Ellenőrzzük le, hogy a getCikkList() metódus nem ad-e vissza a null értéket?!<br>
+     * Fontos: hogy bár az előkészítő metódusok igen, de a 
+     * @Test annotációval ellátott metódusoknak nem lehetnek "static"-ok<br>
+     * Itt azt ellenőrzzük le, hogy a getCikkList() metódus nem ad-e vissza a null értéket?!<br>
      */    
     @Test
     public void cikkRepoShouldNotBeNull() {

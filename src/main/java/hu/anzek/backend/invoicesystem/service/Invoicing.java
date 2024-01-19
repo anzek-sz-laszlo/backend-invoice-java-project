@@ -10,6 +10,7 @@ import hu.anzek.backend.invoicesystem.configuration.InvoceConfigOsztaly;
 import java.io.IOException;
 import java.lang.reflect.Field;
 import java.util.Collections;
+import java.util.Currency;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -25,13 +26,6 @@ public class Invoicing {
     private DatabaseConfig configDb = null;
     private List<InvoceConfigOsztaly.Invoice> invoiceList = null;
     private InvoceConfigOsztaly.Arfolyam arfolyam = new InvoceConfigOsztaly.Arfolyam();    
-    
-
-    private static void throwException() throws OwnConnectionExeption {
-        // Példa: Hiba dobása az OwnConnectionExeption segítségével
-        OwnExceptionClass innerException = new OwnExceptionClass("Ez a belső hiba-kivétel üzenete!");
-        throw new OwnConnectionExeption("Külső kivétel üzenete: ", innerException);
-    }
     
     /**
      * Ez egy nem statikus (példányszintű) inicializációs blokk.<br>
@@ -173,4 +167,57 @@ public class Invoicing {
         return arfolyam;
     }
     
+    /**
+     * Kiolvassa a "SzamlakeszultIdopontja" default paraméter értékét<br>
+     * Ez most csak egy példa kedvéért van, nincs semmi gyakorlati értelme, de a valoságban<br>
+     * felhasználható arra, hogy pl az aott mezőbe ne kerülhessen kisebb vagy nagyobb számot, stb...<br>
+     * Bármely osztályban lekérdezhetők az összes annotációnk valid értkei!<br>
+     * @return a numerikus count() valid értéke<br>
+     */
+    public int getAnnotacionkCounterParametere(){
+        
+        SzamlaKeszultIdopontja idopontja = Invoicing.class.getAnnotation(SzamlaKeszultIdopontja.class);
+        if(idopontja != null){
+            
+            return idopontja.count();
+        }
+        
+        return 0;
+    }
+    
+    /**
+     * Kiolvassa a "SzamlakeszultIdopontja" default paraméter értékét<br>
+     * Ez most csak egy példa kedvéért van, nincs semmi gyakorlati értelme, de a valoságban<br>
+     * felhasználható arra, hogy pl az aott mezőbe nekerülhessen més érték vagy ilyesmire...<br>
+     * Bármely osztályban lekérdezhetők az összes annotációnk valid értkei!<br>
+     * @return a String value() valid értéke<br>
+     */    
+    public String getAnnotacionkValueParametere(){
+        
+        SzamlaKeszultIdopontja idopontja = Invoicing.class.getAnnotation(SzamlaKeszultIdopontja.class);
+        if(idopontja != null){
+            
+            // a napi dátumot mutatja:
+            return idopontja.value();
+        }
+        return "";
+    }
+    
+    /**
+     * Kiolvassa a "SzamlakeszultIdopontja" default paraméter értékét<br>
+     * Ez most csak egy példa kedvéért van, nincs semmi gyakorlati értelme, de a valoságban<br>
+     * felhasználható arra, hogy pl az aott mezőbe nekerülhessen més érték vagy ilyesmire...<br>
+     * Bármely osztályban lekérdezhetők az összes annotációnk valid értkei!<br>
+     * @return a String message() valid értéke<br>
+     */    
+    public String getAnnotacionkMessageParametere(){
+        
+        SzamlaKeszultIdopontja idopontja = Invoicing.class.getAnnotation(SzamlaKeszultIdopontja.class);
+        if(idopontja != null){
+            
+            // a hibás dátumhoz kiíratandó üzenetet mutatja:
+            return idopontja.message();
+        }
+        return "";
+    }    
 }

@@ -13,7 +13,7 @@ public class OwnExceptionClass extends Exception  {
     private static final long serialVersionUID = 1L;
 
     /**
-     * Konstruktor-1<br>
+     * Konstruktor-1, paraméter nélküli<br>
      * A hibakezelő osztály<br>
      */
     public OwnExceptionClass(){        
