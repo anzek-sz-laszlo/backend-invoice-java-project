@@ -26,6 +26,13 @@ public class Invoicing {
     private List<InvoceConfigOsztaly.Invoice> invoiceList = null;
     private InvoceConfigOsztaly.Arfolyam arfolyam = new InvoceConfigOsztaly.Arfolyam();    
     
+
+    private static void throwException() throws OwnConnectionExeption {
+        // Példa: Hiba dobása az OwnConnectionExeption segítségével
+        OwnExceptionClass innerException = new OwnExceptionClass("Ez a belső hiba-kivétel üzenete!");
+        throw new OwnConnectionExeption("Külső kivétel üzenete: ", innerException);
+    }
+    
     /**
      * Ez egy nem statikus (példányszintű) inicializációs blokk.<br>
      * Mint tudjuk ez akkor fut le, amikor az osztály példányosítása, és csaikis egyetlen egyszer.<br>
