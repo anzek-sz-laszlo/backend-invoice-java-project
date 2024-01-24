@@ -5,6 +5,7 @@
 package hu.anzek.backend.invoicesystem.service;
 
 
+import java.sql.SQLException;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -71,11 +72,17 @@ public class OwnExceptionJUnitTest {
             if (innerException != null) {
                 System.out.println("Belso kivetel: " + innerException.getMessage());
             }
-        
+            e.printStackTrace();
+            
         } catch (Exception e) {
             
             // Egyéb kivételek elkapása            
-            System.out.println("Elkapott barmely mas, de altalanos kivetel: " + e.getMessage());
+            System.out.println("Elkapott barmely mas, de altalanos kivetel: " + e.getMessage()); 
+            
+        //        } catch (SQLException e) {
+        //            
+        //            // Egyéb kivételek elkapása            
+        //            System.out.println("Elkapott barmely mas, de altalanos kivetel: " + e.getMessage());
         } finally {
             
             // A finally blokk mindig lefut, függetlenül attól, hogy keletkezett-e kivétel vagy sem...

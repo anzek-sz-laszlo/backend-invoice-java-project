@@ -51,9 +51,9 @@ public class JdbcCikkReadRepo implements VevoCikkRepo {
     public Optional<Cikk> findByKod(Long kod) {
         
         if(kod != null){
-            String sql = "SELECT DISTINCT * FROM cikk WHERE kod = ?";
+            String sqlString = "SELECT DISTINCT * FROM cikk WHERE kod = ?";
             try (Connection connection = msqlr.getConnection();
-                PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+                PreparedStatement preparedStatement = connection.prepareStatement(sqlString)) {
                 preparedStatement.setLong(1, kod);
                 try (ResultSet resultSet = preparedStatement.executeQuery()) {
                     if (resultSet.next()) {
@@ -64,9 +64,14 @@ public class JdbcCikkReadRepo implements VevoCikkRepo {
                                                     )
                                           );
                     }
+                }catch(SQLException e){
+                    // saját hibakezelés egyik lehtséges módja:
+                    // "SELECT DISTINCT * FROM cikk WHERE kod = ?" (? = 1)
+                    System.out.println("Figyelem! Hibas sql-lekerdezes a 'cikk' tablabol : \"" + sqlString + "\" (? = " + kod + ")");
+                    System.out.println("SQLException-hibaforras: " + e.getMessage() );
                 }
-            } catch (SQLException e) {
-                e.printStackTrace();
+            } catch (SQLException sqlException) {
+                sqlException.printStackTrace();
             }
             
             return Optional.empty();        

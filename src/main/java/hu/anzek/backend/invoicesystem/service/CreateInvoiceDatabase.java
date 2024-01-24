@@ -5,8 +5,8 @@
 package hu.anzek.backend.invoicesystem.service;
 
 
+import hu.anzek.backend.invoicesystem.service.MySQLConnectionService;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
@@ -38,7 +38,7 @@ public class CreateInvoiceDatabase {
         try (Connection connection = msqlr.getConnection();
             PreparedStatement statement = connection.prepareStatement(
                     "CREATE TABLE IF NOT EXISTS Invoice ("
-                            + "id BIGINT,"                      // így is lehetne:  PRIMARY KEY AUTO_INCREMENT 
+                            + "id BIGINT , "                          // így is lehetne:  PRIMARY KEY AUTO_INCREMENT 
                             + "sorszam VARCHAR(30) PRIMARY KEY, "   
                             + "sz_adatok VARCHAR(255), "
                             + "adoszam_sz VARCHAR(30), "
@@ -46,6 +46,8 @@ public class CreateInvoiceDatabase {
                             + "v_adatok VARCHAR(255), "
                             + "adoszam_v VARCHAR(30), "
                             + "keszult VARCHAR(10), "
+                            + "fizmod INT, "
+                            + "fizhatido INT, "   
                             + "arfolyam DOUBLE, "
                             + "netto DOUBLE, "
                             + "afa DOUBLE, "

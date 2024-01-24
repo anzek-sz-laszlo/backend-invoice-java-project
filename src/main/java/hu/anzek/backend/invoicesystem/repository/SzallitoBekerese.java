@@ -7,6 +7,7 @@ package hu.anzek.backend.invoicesystem.repository;
 
 import hu.anzek.backend.invoicesystem.model.Szallito;
 import hu.anzek.backend.invoicesystem.repository.SzallitoRepo;
+import hu.anzek.backend.invoicesystem.service.SzamlaKeszultIdopontja;
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -141,7 +142,8 @@ public class SzallitoBekerese{
      * Ez visszadja a funkcionális interfészünk egy példányát<br> 
      * Mégpedig a metódus implementációjával együtt.<br>
      * Ezt a megoldást gyakran láthatjuk az importált könyvtárak,API-k implementációjaként való hivatkozásra!<br>    
-     * @return a "SzallitoRepo" típusú objektumot adja vissza!<br>
+     * @return 
+     * a "SzallitoRepo" típusú objektumot adja vissza!<br>
      */
     public SzallitoRepo getSzallitoRepo() {
 

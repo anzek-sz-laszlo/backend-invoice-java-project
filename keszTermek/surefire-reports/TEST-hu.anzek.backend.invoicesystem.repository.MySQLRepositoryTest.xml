@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="hu.anzek.backend.invoicesystem.repository.MySQLRepositoryTest" time="1.823" tests="2" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="hu.anzek.backend.invoicesystem.repository.MySQLRepositoryTest" time="3.518" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="20"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,9 +15,8 @@
     <property name="user.country" value="HU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-20\bin"/>
-    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire8266788588615826181\surefirebooter-20231216113456776_3.jar C:\Users\User\AppData\Local\Temp\surefire8266788588615826181 2023-12-16T11-34-56_413-jvmRun1 surefire-20231216113456776_1tmp surefire_0-20231216113456776_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire5669367973780598006\surefirebooter-20240124122446530_3.jar C:\Users\User\AppData\Local\Temp\surefire5669367973780598006 2024-01-24T12-24-46_034-jvmRun1 surefire-20240124122446530_1tmp surefire_0-20240124122446530_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="hu.anzek.backend.invoicesystem.repository.MySQLRepositoryTest"/>
     <property name="surefire.test.class.path" value="D:\java_meghajto\ProgramozasTanitasa\java_backend_tanfolyam\anzek\pallas70projects\InvoiceSystem\keszTermek\test-classes;D:\java_meghajto\ProgramozasTanitasa\java_backend_tanfolyam\anzek\pallas70projects\InvoiceSystem\target\classes;C:\Users\User\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0-RC1\junit-jupiter-api-5.10.0-RC1.jar;C:\Users\User\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\User\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0-RC1\junit-platform-commons-1.10.0-RC1.jar;C:\Users\User\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\User\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0-RC1\junit-jupiter-engine-5.10.0-RC1.jar;C:\Users\User\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0-RC1\junit-platform-engine-1.10.0-RC1.jar;C:\Users\User\.m2\repository\org\hamcrest\hamcrest\2.2-rc1\hamcrest-2.2-rc1.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.16.0\jackson-dataformat-yaml-2.16.0.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.16.0\jackson-databind-2.16.0.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.16.0\jackson-annotations-2.16.0.jar;C:\Users\User\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.16.0\jackson-core-2.16.0.jar;C:\Users\User\.m2\repository\com\mysql\mysql-connector-j\8.0.33\mysql-connector-j-8.0.33.jar;C:\Users\User\.m2\repository\com\google\protobuf\protobuf-java\3.21.9\protobuf-java-3.21.9.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\User"/>
@@ -31,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire8266788588615826181\surefirebooter-20231216113456776_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire5669367973780598006\surefirebooter-20240124122446530_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="20.0.1+9-29"/>
@@ -42,7 +41,7 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans-19\netbeans\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans-20\netbeans\java\maven-nblib\netbeans-eventspy.jar"/>
     <property name="localRepository" value="C:\Users\User\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\User\AppData\Local\Temp\"/>
@@ -52,7 +51,7 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1250"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-20\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-21.0.1.12-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\PuTTY\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Zulu\zulu-8\bin\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;D:\cygwin64\bin;C:\Program Files\nodejs\;C:\WINDOWS\system32\config\systemprofile\.vscode\extensions\vscjava.vscode-maven-0.40.4\resources\maven-wrapper;C:\Program Files\Java\jdk-11.0.7\bin;D:\pascal_meghajto\lazarus\fpc\3.2.2\bin\x86_64-win64;D:\maven\apache-maven-3.9.3-bin\apache-maven-3.9.3\bin;C:\Program Files\Java\jdk-20\bin;C:\Program Files\Java\jdk-11\bin;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\User\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\User\AppData\Local\Programs\Python\Python39\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Java\apache-maven-3.6.3;C:\Program Files\Java\apache-maven-3.6.3\bin;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk-11.0.7\bin;%IntelliJ IDEA%;%IntelliJ IDEA Community Edition%;D:\cygwin64\bin;C:\Users\User\AppData\Roaming\npm;C:\Users\User\.vscode\extensions\vscjava.vscode-maven-0.40.4\resources\maven-wrapper;D:\pascal_meghajto\lazarus\fpc\3.2.2\bin\x86_64-win64;D:\maven\apache-maven-3.9.3-bin\apache-maven-3.9.3\bin;C:\Program Files\Java\jdk-20\bin;C:\Program Files\Java\jdk-11\bin;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-20\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-21.0.1.12-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\PuTTY\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Zulu\zulu-8\bin\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;D:\cygwin64\bin;C:\Program Files\nodejs\;C:\Users\User\.vscode\extensions\vscjava.vscode-maven-0.40.4\resources\maven-wrapper;C:\Program Files\Java\jdk-11.0.7\bin;D:\pascal_meghajto\lazarus\fpc\3.2.2\bin\x86_64-win64;D:\maven\apache-maven-3.9.3-bin\apache-maven-3.9.3\bin;C:\Program Files\Java\jdk-20\bin;C:\Program Files\Java\jdk-11\bin;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\User\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\User\AppData\Local\Programs\Python\Python39\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Java\apache-maven-3.6.3;C:\Program Files\Java\apache-maven-3.6.3\bin;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk-11.0.7\bin;%IntelliJ IDEA%;%IntelliJ IDEA Community Edition%;D:\cygwin64\bin;C:\Users\User\AppData\Roaming\npm;C:\Users\User\.vscode\extensions\vscjava.vscode-maven-0.40.4\resources\maven-wrapper;D:\pascal_meghajto\lazarus\fpc\3.2.2\bin\x86_64-win64;D:\maven\apache-maven-3.9.3-bin\apache-maven-3.9.3\bin;C:\Program Files\Java\jdk-20\bin;C:\Program Files\Java\jdk-11\bin;;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="stderr.encoding" value="Cp1250"/>
     <property name="java.vendor" value="Oracle Corporation"/>
@@ -60,16 +59,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="64.0"/>
   </properties>
-  <testcase name="vevok_Sql_save_Test" classname="hu.anzek.backend.invoicesystem.repository.MySQLRepositoryTest" time="0.177"/>
-  <testcase name="cikkek_Sql_save_Test" classname="hu.anzek.backend.invoicesystem.repository.MySQLRepositoryTest" time="1.554">
-    <failure message="Nincs talalat, ures eredmenyt kaptunk!" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Nincs talalat, ures eredmenyt kaptunk!
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
-	at org.junit.jupiter.api.Assertions.fail(Assertions.java:134)
-	at hu.anzek.backend.invoicesystem.repository.MySQLRepositoryTest.cikkek_Sql_save_Test(MySQLRepositoryTest.java:106)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></failure>
+  <testcase name="vevok_Sql_save_Test" classname="hu.anzek.backend.invoicesystem.repository.MySQLRepositoryTest" time="0.236"/>
+  <testcase name="cikkek_Sql_save_Test" classname="hu.anzek.backend.invoicesystem.repository.MySQLRepositoryTest" time="3.271">
     <system-out><![CDATA[LINE = > kod : 1
 LINE = > megnevezes : Egyes termek
 LINE = > mennyisegi_egyseg : raklap
@@ -143,6 +134,7 @@ LINE = > kod : 4
 LINE = > megnevezes : Negyes termek
 LINE = > mennyisegi_egyseg : csomag
 LINE = > egyseg_ar : 61500.78
+Azonosak!
 ]]></system-out>
     <system-err><![CDATA[java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'cikk.PRIMARY'
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)

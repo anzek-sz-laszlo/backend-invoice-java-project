@@ -17,7 +17,9 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD) 
 public @interface SzamlaKeszultIdopontja {
-    String value() default "CURRENT_DATE";
+    String value() default "CURRENT_DATE"; // String value() default LocalDate.now();
     int count() default 1;
     String message() default "A megadott datum hibas!";
+    int alsoHatar() default 0;
+    int felsoHatar() default 100;
 }

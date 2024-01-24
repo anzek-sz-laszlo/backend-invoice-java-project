@@ -1,17 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: hu.anzek.backend.invoicesystem.repository.CikkBeolvasTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.153 s <<< FAILURE! -- in hu.anzek.backend.invoicesystem.repository.CikkBeolvasTest
-hu.anzek.backend.invoicesystem.repository.CikkBeolvasTest.cikkRepoShouldNotBeNull -- Time elapsed: 0.029 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <5> but was: <4>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:527)
-	at hu.anzek.backend.invoicesystem.repository.CikkBeolvasTest.cikkRepoShouldNotBeNull(CikkBeolvasTest.java:73)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.201 s -- in hu.anzek.backend.invoicesystem.repository.CikkBeolvasTest

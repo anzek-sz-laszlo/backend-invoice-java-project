@@ -1,4 +1,8 @@
+D:\java_meghajto\ProgramozasTanitasa\java_backend_tanfolyam\anzek\pallas70projects\InvoiceSystem\src\test\java\hu\anzek\backend\invoicesystem\service\OwnExceptionJUnitTest.java
 D:\java_meghajto\ProgramozasTanitasa\java_backend_tanfolyam\anzek\pallas70projects\InvoiceSystem\src\test\java\hu\anzek\backend\invoicesystem\repository\CikkBeolvasTest.java
+D:\java_meghajto\ProgramozasTanitasa\java_backend_tanfolyam\anzek\pallas70projects\InvoiceSystem\src\test\java\hu\anzek\backend\invoicesystem\repository\MySQLRepositoryTest.java
+D:\java_meghajto\ProgramozasTanitasa\java_backend_tanfolyam\anzek\pallas70projects\InvoiceSystem\src\test\java\hu\anzek\backend\invoicesystem\service\CreateMysqlDatabaseJUnitTest.java
+D:\java_meghajto\ProgramozasTanitasa\java_backend_tanfolyam\anzek\pallas70projects\InvoiceSystem\src\test\java\hu\anzek\backend\invoicesystem\service\MySQLConnectionServiceTest.java
 D:\java_meghajto\ProgramozasTanitasa\java_backend_tanfolyam\anzek\pallas70projects\InvoiceSystem\src\test\java\hu\anzek\backend\invoicesystem\repository\VevoBekereseTest.java
 D:\java_meghajto\ProgramozasTanitasa\java_backend_tanfolyam\anzek\pallas70projects\InvoiceSystem\src\test\java\hu\anzek\backend\invoicesystem\repository\SzallitoBekereseTest.java
 D:\java_meghajto\ProgramozasTanitasa\java_backend_tanfolyam\anzek\pallas70projects\InvoiceSystem\src\test\java\hu\anzek\backend\invoicesystem\service\DiscountedValueTest.java

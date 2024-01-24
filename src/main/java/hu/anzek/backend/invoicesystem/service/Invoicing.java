@@ -10,7 +10,6 @@ import hu.anzek.backend.invoicesystem.configuration.InvoceConfigOsztaly;
 import java.io.IOException;
 import java.lang.reflect.Field;
 import java.util.Collections;
-import java.util.Currency;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -56,6 +55,7 @@ public class Invoicing {
      * A számlázás üzleti logika onstruktora<br>
      */
     public Invoicing() {
+        super();
     }   
 
     public void readSzamlakeszulActualConfigStatus() throws IOException, IllegalArgumentException, IllegalAccessException{

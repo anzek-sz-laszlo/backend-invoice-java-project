@@ -15,6 +15,7 @@ public class OwnConnectionExeption extends Exception {
     private final OwnExceptionClass connectionException;
 
     public OwnConnectionExeption(final OwnExceptionClass ownException) {
+        super();
         this.connectionException = ownException;
     }
 

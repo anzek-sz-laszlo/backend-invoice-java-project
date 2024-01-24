@@ -8,9 +8,9 @@ package hu.anzek.backend.invoicesystem.service;
  *
  * @author User
  */
-public class OwnExceptionClass extends Exception  {
-        
-    private static final long serialVersionUID = 1L;
+public class OwnExceptionClass extends Exception {
+
+    private static final long serialVersionUID = 259876500001254L;    
 
     /**
      * Konstruktor-1, paraméter nélküli<br>

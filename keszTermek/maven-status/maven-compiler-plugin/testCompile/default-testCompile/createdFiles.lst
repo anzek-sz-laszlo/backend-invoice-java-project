@@ -1,5 +1,11 @@
 hu\anzek\backend\invoicesystem\repository\CikkBeolvasTest.class
+hu\anzek\backend\invoicesystem\service\CreateMysqlDatabaseJUnitTest.class
+hu\anzek\backend\invoicesystem\repository\MySQLRepositoryTest.class
 hu\anzek\backend\invoicesystem\repository\VevoBekereseTest.class
-hu\anzek\backend\invoicesystem\service\InvoicingTest.class
+hu\anzek\backend\invoicesystem\service\MySQLConnectionServiceTest.class
+hu\anzek\backend\invoicesystem\repository\MySQLRepositoryTest$2.class
 hu\anzek\backend\invoicesystem\service\DiscountedValueTest.class
 hu\anzek\backend\invoicesystem\repository\SzallitoBekereseTest.class
+hu\anzek\backend\invoicesystem\service\OwnExceptionJUnitTest.class
+hu\anzek\backend\invoicesystem\repository\MySQLRepositoryTest$1.class
+hu\anzek\backend\invoicesystem\service\InvoicingTest.class

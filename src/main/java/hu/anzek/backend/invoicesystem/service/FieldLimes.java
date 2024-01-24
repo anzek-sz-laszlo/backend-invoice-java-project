@@ -12,13 +12,14 @@ import java.lang.annotation.Target;
 
 
 /**
- * Egyszerű címke annotáció, meely jelzi, hogy a következő adat egy úgynevezett SQL külső-kulcs<br>
- * A "@Retention" beállítás azt jelenti, hogy a futási időben is elérhető lesz az annotáció<br>
-   A @Target beállítás azt jelzi, hogy ő egy meező-információ lesz<br>
+ * Adatmező adat-határ ellenőrő annotáció<br>
  * @author User
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD) 
-public @interface KulsoKulcs {
-    String table(); 
+public @interface FieldLimes {
+    
+    String lastLimes() default "00000";
+    String firstLimes() default "99999";
+    String message() default "A szamlasorszam kivul esik a tartomanyon!";
 }

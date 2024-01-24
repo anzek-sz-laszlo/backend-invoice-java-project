@@ -5,13 +5,12 @@
 package hu.anzek.backend.invoicesystem.model;
 
 
-
 /**
  * A számla cikk-elemeinek az entitása<br>
  * @author User
  */
 public record Cikk( Long kod,
                     String megnevezes,
-                    String mennyisegi_egyseg,
+                    String mennyisegi_egyseg, // 
                     double egyseg_ar) {
 }
